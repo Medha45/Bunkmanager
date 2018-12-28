@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="math"
+        android:textSize="30sp"
+        android:id="@+id/textview_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75%"
+        android:textSize="30sp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/textview_name"
+        android:id="@+id/textview_min"/>
+
+    <Button
+        android:id="@+id/p-"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_name"
+        android:layout_marginTop="0dp"
+        android:text="-" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P"
+        android:textSize="30sp"
+        android:layout_below="@id/textview_name"
+        android:layout_toRightOf="@id/p-"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/textviewp"/>
+    <Button
+        android:id="@+id/p"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_name"
+        android:layout_marginTop="0dp"
+        android:text="+"
+        android:layout_toRightOf="@id/textviewp"
+        android:layout_marginLeft="5dp"/>
+
+
+    <Button
+        android:id="@+id/a-"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p-"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/textviewp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="51dp"
+        android:layout_toRightOf="@id/p-"
+        android:text="A"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/a"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_name"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="48dp"
+        android:layout_toRightOf="@id/textviewp"
+        android:text="+" />
+
+    <TextView
+        android:layout_width="202dp"
+        android:layout_height="92dp"
+        android:layout_below="@+id/textview_min"
+        android:layout_marginLeft="43dp"
+        android:layout_toRightOf="@id/a"
+        android:text="CLASSES NOT STARTED"
+        android:textSize="20sp" />
+
+</RelativeLayout>
